@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaci&oacute;n</title>
+</head>
+    <body>
+        <header>
+            <nav id="nav" class="navNC">
+                <ul>
+                    <li onclick="location.href='/'">Captura</li>
+                    <li onclick="location.href='/src/views/listado.html'">Listado</li>
+                    <li onclick="location.href='#'">Evaluaci&oacute;n</li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="titulo">Evaluaci&oacute;n</h1>
+            <div class="lista">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <td class="titulos">Nombre</td>
+                            <td class="titulos">Apellido Paterno</td>
+                            <td class="titulos">Apellido Materno</td>
+                            <td class="titulos">Estatus</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="contenedor" id="contenedor" style="display: none;">
+                    <button class="btn-regresar" id="bth-regresar">Regresar</button>
+                    <div class="prospecto-detalle" id="prospecto-detalle"></div>
+                    <button type="button" id="btn-autorizar" class="btn-autorizar" value="Autorizado">Autorizar</button>
+                    <button type="button" id="btn-rechazar" class="btn-regresar" value="Rechazado">Rechazar</button>
+                </div>
+
+                <form class="form-obs" id="observaciones" style="display: none;">
+                    <div><label class="tit-obs">Observaciones</label></div>
+                    <textarea name="observaciones" id="prospecto-observaciones" cols="30" rows="10" required></textarea>
+                    <div class="btn-obs">
+                        <button type="submit" id="btn-enviar" class="btn-enviar">Enviar</button>
+                        <button type="button" id="btn-cancelar" class="btn-cancelar">Cancelar</button>  
+                    </div>
+                </form>
+
+            </div>
+        <script type="module" src="/src/js/evaluacion.js"></script>
+    </body>
+</html>

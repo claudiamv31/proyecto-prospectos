@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.datos{
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+header{
+  width: 100%;
+}
+
+h1{
+  margin: 2%;
+  text-align: center;
+  font-style: inherit;
+  font-family: Times New Roman;
+  font-weight: 1500;
+  color: #1B262C;
+  font-size: 40px;
+}
+
+label{
+  display: inline-block;
+  width: 6%;
+  margin: .40%;
+  font-family: sans-serif;
+}
+
+.required:after {
+  content:"*";
+  color: red;
+}
+
+input[type="text"]{
+  height: 60%;
+  border-radius: 2px;
+  padding:.5%;
+  box-sizing:border-box;
+  border: #240004 solid 2px;
+  margin-bottom: .1%;
+}
+
+button{
+  margin-top: 1%;
+  width: 20%;
+  background-color: #0F4C75;
+  border-radius: 3px;
+  border:none;
+  margin: .30%;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans Unicode';
+  font-size: 25px;
+  font-weight:bolder;
+  color: white;
+}
+
+button:hover{
+  background-color: #3282B8;
+}
+
+.apellidos{
+  padding-right: 23.5%;
+}
+
+.doc>label{
+  margin-right:3%;
+}
+
+.documentos input[type="file"] {
+  opacity: 0;
+  width: 20px;
+  height: 32px;
+  display: inline-block;
+}
+
+input[name="nombre"], input[name="rfc"], input[name="colonia"]{
+  width: 23.4%;
+}
+
+input[name="apellido_pat"],input[name="apellido_mat"]{
+  width: 23.4%;
+}
+input[name="telefono"], input[name="codigo_p"]{
+  width: 8%;
+}
+
+input[name = "calle"]{
+  width: 9.6%;
+}
+
+input[name = "numero"]{
+  width: 6.5%;
+}
+
+@media only screen and (max-width: 1138px) {
+  .doc>label{
+      margin-right:2%;
+  }
+}

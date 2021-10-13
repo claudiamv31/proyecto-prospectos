@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Captura</title>
+  </head>
+  <body>
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu">Menú</a>
+        </div>
+        <nav class="navNC">
+            <ul>
+                <li onclick="location.href='/'">Captura</li>
+                <li onclick="location.href='/src/views/listado.html'">Listado</li>
+                <li onclick="location.href='/src/views/evaluacion.html'">Evaluaci&oacute;n</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Captura de informaci&oacute;n</h1>
+        <form id="formulario">
+            <div class="datos">
+                <div class="nombre">
+                    <label class="required">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" title="Nombre" required>
+                </div>
+                <div class="apellidos">
+                    <label>Apellidos</label>
+                </div>
+                <div>
+                    <label class="required">Primero:</label>
+                    <input type="text" id="apellido_pat" name="apellido_pat" title="Primer Apellido" placeholder="Primer Apellido" required>
+                </div>
+                <div class="apellido_m">
+                    <label>Segundo:</label>
+                    <input type="text" id="apellido_mat" name="apellido_mat" title="Segundo Apellido" placeholder="Segundo Apellido">
+                </div>
+                <div class="calle">
+                    <label class="required">Calle: </label>
+                    <input type="text" id="calle" name="calle" title="Calle" placeholder="Calle" required>
+                    <label class="required">N&uacute;mero: </label>
+                    <input type="text" id="numero" name="numero" title="N&uacute;mero" placeholder="N&uacute;mero" required>
+                </div>
+                <div class="colonia">
+                    <label class="required">Colonia: </label>
+                    <input type="text" id="colonia" name="colonia" title="Colonia" placeholder="Colonia" required>
+                </div>
+                <div class="codigop">
+                    <label class="required">CP: </label>
+                    <input type="text" id="codigo_p" name="codigo_p" title="C&oacute;digo Postal" placeholder="C&oacute;digo Postal" required>
+                    <label class="required">Tel&eacute;fono: </label>
+                    <input type="text" id="telefono" name="telefono" title="Tel&eacute;fono" placeholder="Tel&eacute;fono" required>
+                </div>
+                <div class="rfc">
+                    <label class="required">RFC: </label>
+                    <input type="text" id="rfc" name="rfc" title="RFC" placeholder="RFC" required>
+                </div>
+                <div class="doc">
+                    <label class="required">Docs: </label>
+                    <input type="file" class="documentos" id="documentos" name="documentos" multiple required>
+                </div>
+                <button type="submit" id="enviar" name="enviar" value="Enviar">Enviar</button>
+                <button type="button" id="cancelar" name="cancelar" value="cancelar">Salir</button>
+            </div>
+        </form>
+        <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

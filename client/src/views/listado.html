@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Prospectos</title>
+</head>
+    <body>
+        <header>
+            <nav id="nav" class="navNC">
+                <ul>
+                    <li onclick="location.href='/'">Captura</li>
+                    <li onclick="location.href='#'">Listado</li>
+                    <li onclick="location.href='/src/views/evaluacion.html'">Evaluaci&oacute;n</li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="titulo">Listado de Prospectos</h1>
+            <div class="lista">
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <td class="titulos">Nombre</td>
+                            <td class="titulos">Apellido Paterno</td>
+                            <td class="titulos">Apellido Materno</td>
+                            <td class="titulos">Estatus</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="informacion" id="contenedor" style="display: none;">
+                    <button id="bth-regresar">Regresar</button>
+                    <div class="prospecto-detalle" id="prospecto-detalle"></div>
+                </div>
+            </div>
+        <script type="module" src="/src/js/listado.js"></script>
+    </body>
+</html>

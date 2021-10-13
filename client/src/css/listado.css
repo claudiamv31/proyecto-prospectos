@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+/*LISTA*/
+h1{
+    margin: 2%;
+    text-align: center;
+    font-style: inherit;
+    font-family: Times New Roman;
+    font-weight: 1500;
+    color: #1B262C;
+    font-size: 40px;
+}
+
+.contenido{
+    text-align:center;
+}
+
+table{
+    margin: 0 auto;
+    border: 1px #0F4C75;
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+}
+
+.titulos{
+    border: 1px solid #0F4C75; 
+    background-color: #0F4C75;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+td{
+    border: 1px solid #0F4C75;
+    padding: 10px;
+    font-family: sans-serif;
+
+}
+
+button{
+    background-color: #0F4C75;
+    border-radius: 3px;
+    border:none;
+    margin: .30%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 20px;
+    font-weight:bolder;
+    color: white;
+    width: 100px;
+}
+
+button:hover{
+    background-color: #3282B8;
+}
+
+.prospecto-detalle{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 30px;
+    
+}
